@@ -8,22 +8,6 @@ weightInput.focus(); // membuat focus input saat pertama kali website direload
 // console.log(weightInput);
 // console.log(heightInput);
 
-weightInput.addEventListener("input", function(){
-    if (this.value < 0) { 
-        this.value = ""; 
-    } if (this.value == 0) {
-        this.value = "";
-    }
-});
-
-heightInput.addEventListener("input", function(){
-    if (this.value < 0) { 
-        this.value = ""; 
-    } if (this.value == 0) {
-        this.value = "";
-    }
-});
-
 formInput.addEventListener("submit", (e) => {
     e.preventDefault();
     let weight = weightInput.value 
